@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SistemaFER_v02
+namespace WindowsFormsApplication1
 {
-    public partial class frmPrincipal : Form
+    public partial class CustomControl1 : Control
     {
-        public frmPrincipal()
+        public CustomControl1()
         {
             InitializeComponent();
+        }
+
+        protected override void OnPaint(PaintEventArgs pe)
+        {
+            base.OnPaint(pe);
         }
     }
 }

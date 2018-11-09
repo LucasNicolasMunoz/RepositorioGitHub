@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9F738103-0AC3-4180-B00E-1801CBF8D027}</ProjectGuid>
+    <ProjectGuid>{98745838-8C01-4F41-AFA3-2D3B43E13935}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SistemaFER_v02</RootNamespace>
-    <AssemblyName>SistemaFER_v02</AssemblyName>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,10 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AdvancedDataGridView, Version=0.1.0.10, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ADGV.0.1.0.10\lib\net40\AdvancedDataGridView.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,20 +52,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FuncionesDeVentana.cs" />
-    <Compile Include="frmPrincipal.cs">
+    <Compile Include="miform1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPrincipal.Designer.cs">
-      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    <Compile Include="miform1.Designer.cs">
+      <DependentUpon>miform1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal.resx">
-      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="miform1.resx">
+      <DependentUpon>miform1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -79,9 +71,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,73 +84,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <None Include="Resources\bar-graph1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\calendar %281%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cancel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Close.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\health %281%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Health-PNG-Image.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Health-PNG-Image2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\left-arrow %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logout %281%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\loupe %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\maximize3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menu.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menu2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Minimize.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Normal.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\patient %281%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\payment1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\person-settings1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\phone-book %281%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\seo1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
